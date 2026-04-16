@@ -469,14 +469,14 @@ ai:
 
   timeout: 240                      # 请求超时（秒）
 
-  temperature: 1.0                  # 采样温度 (0.0-2.0)
+  temperature: 0.7                  # 采样温度 (0.0-2.0)
                                     # 注意：部分模型(如 gpt-5)可能要求必须为 1.0，否则会报错
   
   max_tokens: 0                  # 最大生成 token 数
                                     # 注意：如果 API 不支持此参数(报 HTTP 400)，请设为 0 以禁用发送
   # 高级选项
   num_retries: 1                    # 失败重试次数
-  fallback_models: [openai/qwen3.5-plus-2026-02-15]               # 备用模型列表（可选）
+  fallback_models: []               # 备用模型列表（可选）
                                     # 示例: ["openai/gpt-4o-mini", "openai/deepseek-ai/DeepSeek-V3"]
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
